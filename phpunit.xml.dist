@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<phpunit>
+    <logging>
+        <log type="tap" target="php://stdout"></log>
+    </logging>
+    <listeners>
+        <listener class="iakio\phpunit\smartrunner\DependencyListener"></listener>
+    </listeners>
+</phpunit>

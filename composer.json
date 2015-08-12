@@ -1,0 +1,17 @@
+{
+    "autoload": {
+        "psr-4": {
+            "": "src/"
+        }
+    },
+    "require": {
+        "phpunit/phpunit": "^4.8",
+        "iakio/phpunit-smartrunner": "dev-master"
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/iakio/phpunit-smartrunner"
+        }
+    ]
+}
