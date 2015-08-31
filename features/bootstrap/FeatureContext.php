@@ -28,7 +28,11 @@ class FeatureContext implements Context, SnippetAcceptingContext
      */
     public function removeCacheDir()
     {
-        exec("rm -rf .smartrunner");
+        if (defined('PHP_WINDOWS_VERSION_BUILD')) {
+            exec("rd /S /Q .smartrunner");
+        } else {
+            exec("rm -rf .smartrunner");
+        }
     }
 
     /**
